@@ -2,7 +2,7 @@
 
 #### Clone the repository
 ```
-git clone
+git clone https://github.com/rijukandathil/yolo_detection.git
 cd yolo_detection
 ```
 #### Download the dataset and unzip the folder
