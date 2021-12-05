@@ -21,7 +21,7 @@ python3 COCO2YOLO.py -j trainval/annotations/bbox-annotations.json -o trainval/i
 *  set `GPU=1`, `CUDNN=1`, `OPENCV=1` (make sure that you have correctly installed cuda, cudnn and opencv)
 * Then `make` 
 
-#### Train the model with our coustom dataset
+#### Train the model with our custom dataset
 1. Download the pre-trained weights-file (162 MB): [yolov4.conv.137](https://github.com/AlexeyAB/darknet/releases/download/darknet_yolo_v3_optimal/yolov4.conv.137) .
 2. Create file `yolo-obj.cfg` with the same content as in `yolov4-custom.cfg`.
    > change line batch to `batch=64` and `subdivisions=64`
@@ -54,10 +54,10 @@ python3 COCO2YOLO.py -j trainval/annotations/bbox-annotations.json -o trainval/i
 
 ![](https://i.imgur.com/7Drj1BJ.png)
 
-#### Testing the model on a coustom image
+#### Testing the model on a custom image
 * The trained weights can be downloaded from [Google Drive](https://drive.google.com/file/d/10P616BtblhM_jLz0h-gc0LSrbcYyObF0/view?usp=sharing).
 * Open `yolo-obj.cfg`:
-  > change line batch to `batch=1` and `subdivisions=1
+  > change line batch to `batch=1` and `subdivisions=1`
 * Run `./darknet detector test data/obj.data cfg/yolo-obj.cfg yolo-obj_final.weights test.jpg`.
 
 ![](https://i.imgur.com/sdXoqP8.jpg)
