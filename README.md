@@ -21,7 +21,7 @@ python3 COCO2YOLO.py -j trainval/annotations/bbox-annotations.json -o trainval/i
 *  set `GPU=1`, `CUDNN=1`, `OPENCV=1` (make sure that you have correctly installed cuda, cudnn and opencv)
 * Then `make` 
 
-#### Train the model with our custom dataset
+#### Train the model with the custom dataset
 1. Download the pre-trained weights-file (162 MB): [yolov4.conv.137](https://github.com/AlexeyAB/darknet/releases/download/darknet_yolo_v3_optimal/yolov4.conv.137) .
 2. Create file `yolo-obj.cfg` with the same content as in `yolov4-custom.cfg`.
    > change line batch to `batch=64` and `subdivisions=64` \
